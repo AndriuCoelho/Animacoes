@@ -40,6 +40,8 @@
 		0388B02F20DC19EF005F6A7C /* icon_hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388B01E20DC19EF005F6A7C /* icon_hotel.png */; };
 		0388B03120DC1B62005F6A7C /* PacoteViagemDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388B03020DC1B62005F6A7C /* PacoteViagemDao.swift */; };
 		B9038B3021E126A800E3BB54 /* Validador.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9038B2F21E126A800E3BB54 /* Validador.swift */; };
+		B994E10A21EA48D1006D7DCA /* launch-screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B994E10921EA48D1006D7DCA /* launch-screen.jpg */; };
+		B994E10E21EA5457006D7DCA /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B994E10D21EA5457006D7DCA /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		0388B01E20DC19EF005F6A7C /* icon_hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hotel.png; sourceTree = "<group>"; };
 		0388B03020DC1B62005F6A7C /* PacoteViagemDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagemDao.swift; sourceTree = "<group>"; };
 		B9038B2F21E126A800E3BB54 /* Validador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validador.swift; sourceTree = "<group>"; };
+		B994E10921EA48D1006D7DCA /* launch-screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "launch-screen.jpg"; sourceTree = "<group>"; };
+		B994E10D21EA5457006D7DCA /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +156,7 @@
 				030997B420E12DF0009ECA38 /* PacotesViagensViewController.swift */,
 				030B69CE20E153BA006B5424 /* DetalhesViagemViewController.swift */,
 				036A96D020E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift */,
+				B994E10D21EA5457006D7DCA /* LaunchScreenViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -159,6 +164,7 @@
 		0388B00D20DC19EF005F6A7C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B994E10921EA48D1006D7DCA /* launch-screen.jpg */,
 				0388B00E20DC19EF005F6A7C /* icon_back.png */,
 				0388B00F20DC19EF005F6A7C /* icon_search@2x.png */,
 				0388B01020DC19EF005F6A7C /* icon_package@2x.png */,
@@ -248,6 +254,7 @@
 				0388B02C20DC19EF005F6A7C /* img1.png in Resources */,
 				0388B01F20DC19EF005F6A7C /* icon_back.png in Resources */,
 				03715B2F20DC050A00F2250A /* Assets.xcassets in Resources */,
+				B994E10A21EA48D1006D7DCA /* launch-screen.jpg in Resources */,
 				0388B02320DC19EF005F6A7C /* img8.jpg in Resources */,
 				0388B02820DC19EF005F6A7C /* img7.jpg in Resources */,
 				03715B2A20DC050800F2250A /* Main.storyboard in Resources */,
@@ -274,6 +281,7 @@
 				B9038B3021E126A800E3BB54 /* Validador.swift in Sources */,
 				0388B00A20DC177A005F6A7C /* PacoteViagem.swift in Sources */,
 				036A96D120E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift in Sources */,
+				B994E10E21EA5457006D7DCA /* LaunchScreenViewController.swift in Sources */,
 				0388B00620DC156E005F6A7C /* PacotesCollectionViewCell.swift in Sources */,
 				03715B3F20DC06BB00F2250A /* ViewController.swift in Sources */,
 				0388B03120DC1B62005F6A7C /* PacoteViagemDao.swift in Sources */,
