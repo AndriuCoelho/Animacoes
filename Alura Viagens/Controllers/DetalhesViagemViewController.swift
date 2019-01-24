@@ -20,6 +20,9 @@ class DetalhesViagemViewController: UIViewController {
     @IBOutlet weak var labelPrecoPacoteViagem: UILabel!
     @IBOutlet weak var scrollViewPrincipal: UIScrollView!
     @IBOutlet weak var textFieldData: UITextField!
+    @IBOutlet weak var textFieldNumeroCartao: UITextField!
+    @IBOutlet weak var textFieldNomeCartao: UITextField!
+    @IBOutlet weak var textFieldSenhaCartao: UITextField!
     
     // MARK: - Atributos
     
@@ -56,6 +59,20 @@ class DetalhesViagemViewController: UIViewController {
         textFieldData.text = formatador.string(from: sender.date)
     }
     
+    func pulsar(_ button: UIButton) {
+        let pulsar = CASpringAnimation(keyPath: "transform.scale")
+        pulsar.duration = 0.5
+        pulsar.fromValue = 0.95
+        pulsar.toValue = 1.0
+        pulsar.autoreverses = true
+        pulsar.repeatCount = 1
+        
+        pulsar.initialVelocity = 0.5
+        pulsar.damping = 1.0
+        
+        button.layer.add(pulsar, forKey: nil)
+    }
+    
     // MARK: - IBActions
     
     @IBAction func textFieldDataDidBegin(_ sender: UITextField) {
@@ -70,10 +87,14 @@ class DetalhesViagemViewController: UIViewController {
     }
     
     @IBAction func botaoFinalizarCompra(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "confirmacaoPagamento") as! ConfirmacaoPagamentoViewController
-        controller.pacoteComprado = pacoteSelecionado
-        
-        navigationController?.pushViewController(controller, animated: true)
+        let textFields = [textFieldNumeroCartao, textFieldNomeCartao, textFieldData, textFieldSenhaCartao]
+        if Validador().validaTextFields(textFields) {
+            pulsar(sender)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let controller = storyboard.instantiateViewController(withIdentifier: "confirmacaoPagamento") as! ConfirmacaoPagamentoViewController
+            controller.pacoteComprado = pacoteSelecionado
+
+            navigationController?.pushViewController(controller, animated: true)
+        }
     }
 }

@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="59T-FL-0v3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="59T-FL-0v3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -143,7 +142,7 @@
                                 <rect key="frame" x="0.0" y="205" width="375" height="413"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="185" id="bL3-1x-vxq" customClass="TableViewCell" customModule="Alura_Viagens" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="185" id="bL3-1x-vxq" customClass="TableViewCell" customModule="Alura_Viagens" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="185"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bL3-1x-vxq" id="X0o-WK-kIt">
@@ -178,7 +177,7 @@
                                                     </variation>
                                                 </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4gd-OP-aOS">
-                                                    <rect key="frame" x="20" y="33" width="335" height="119.5"/>
+                                                    <rect key="frame" x="20" y="33" width="335" height="120"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -299,14 +298,14 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="135" height="139"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pKh-xg-RjZ">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pKh-xg-RjZ">
                                                             <rect key="frame" x="0.0" y="0.0" width="135" height="160"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="M3j-dG-hgA">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="90.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="58"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yOA-gA-9ET">
-                                                                    <rect key="frame" x="0.0" y="90.5" width="135" height="20"/>
+                                                                    <rect key="frame" x="0.0" y="58" width="135" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="3By-vK-Vgk">
                                                                             <variation key="heightClass=regular-widthClass=regular" constant="25"/>
@@ -320,7 +319,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxS-ub-VN6">
-                                                                    <rect key="frame" x="0.0" y="110.5" width="135" height="20"/>
+                                                                    <rect key="frame" x="0.0" y="78" width="135" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="lFS-ph-iXw">
                                                                             <variation key="heightClass=regular-widthClass=regular" constant="25"/>
@@ -334,7 +333,7 @@
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rui-rN-RF5">
-                                                                    <rect key="frame" x="0.0" y="130.5" width="135" height="20"/>
+                                                                    <rect key="frame" x="0.0" y="98" width="135" height="20"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="7eM-cv-Gb4">
                                                                             <variation key="heightClass=regular-widthClass=regular" constant="25"/>
@@ -403,7 +402,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uup-E0-iFM">
-                                <rect key="frame" x="0.0" y="0.0" width="375.5" height="185"/>
+                                <rect key="frame" x="0.0" y="0.0" width="376" height="185"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="185" id="QJf-Bs-zD0">
                                         <variation key="heightClass=regular-widthClass=regular" constant="250"/>
@@ -411,7 +410,7 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRT-Vu-p3f">
-                                <rect key="frame" x="16" y="185" width="343.5" height="482"/>
+                                <rect key="frame" x="16.5" y="185" width="343.5" height="482"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cE6-q4-S07">
                                         <rect key="frame" x="0.0" y="0.0" width="343.5" height="467.5"/>
@@ -562,7 +561,7 @@
                                                                         </constraints>
                                                                     </imageView>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hotel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6N7-ED-TOk">
-                                                                        <rect key="frame" x="-3" y="53" width="120" height="21"/>
+                                                                        <rect key="frame" x="-3" y="53" width="120.5" height="21"/>
                                                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                                         <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
@@ -590,7 +589,7 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="114.5" height="90"/>
                                                                 <subviews>
                                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_breakfast.png" translatesAutoresizingMaskIntoConstraints="NO" id="BQd-2z-gYl">
-                                                                        <rect key="frame" x="40.5" y="8" width="35" height="35"/>
+                                                                        <rect key="frame" x="39.5" y="8" width="35" height="35"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="35" id="P8o-Mw-bih">
                                                                                 <variation key="heightClass=regular-widthClass=regular" constant="50"/>
@@ -754,6 +753,9 @@
                         <outlet property="labelTituloPacoteViagem" destination="x6a-Pa-rJW" id="OJV-uw-vEp"/>
                         <outlet property="scrollViewPrincipal" destination="nRT-Vu-p3f" id="NgY-w5-bpV"/>
                         <outlet property="textFieldData" destination="OwW-jy-tIE" id="jlb-iA-tRY"/>
+                        <outlet property="textFieldNomeCartao" destination="h1B-fN-hXM" id="XAY-Ys-Sp6"/>
+                        <outlet property="textFieldNumeroCartao" destination="rWr-ru-ow1" id="Foo-aG-kx4"/>
+                        <outlet property="textFieldSenhaCartao" destination="cl1-Zl-tiM" id="ZlE-DH-QTT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nj3-94-IjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
