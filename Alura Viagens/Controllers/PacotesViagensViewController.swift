@@ -95,10 +95,9 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
         
         switch operation {
         case .push:
-            return AnimacaoTransicaoPersonalizada(duracao: 0.5, imagem: imagem, frameInicial: frame)
+            return AnimacaoTransicaoPersonalizada(duracao: TimeInterval(UINavigationControllerHideShowBarDuration), imagem: imagem, frameInicial: frame, apresentarViewController: true)
         default:
-            // TO DO: Implementar animacao POP
-            return AnimacaoTransicaoPersonalizada(duracao: 0.5, imagem: imagem, frameInicial: frame)
+            return AnimacaoTransicaoPersonalizada(duracao: TimeInterval(UINavigationControllerHideShowBarDuration), imagem: imagem, frameInicial: frame, apresentarViewController: false)
         }
     }
 }
