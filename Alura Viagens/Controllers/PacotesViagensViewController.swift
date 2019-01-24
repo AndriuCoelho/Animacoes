@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PacotesViagensViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate {
+class PacotesViagensViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate, UINavigationControllerDelegate {
     
     // MARK: - IBOutlets
     
@@ -20,12 +20,15 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     
     let listaComTodasViagens: [PacoteViagem] = PacoteViagemDao().retornaTodasAsViagens()
     var listaViagens: [PacoteViagem] = []
+    var pacoteSelecionado: PacoteViagem?
+    var frameSelecionado: CGRect?
     
     // MARK: - View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         pesquisarViagens.delegate = self
+        navigationController?.delegate = self
         listaViagens = listaComTodasViagens
         labelContadorPacotes.text = atualizaContadorLabel()
     }
@@ -65,9 +68,14 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let pacote = listaViagens[indexPath.item]
+        pacoteSelecionado = pacote
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let controller = storyboard.instantiateViewController(withIdentifier: "detalhes") as! DetalhesViagemViewController
         controller.pacoteSelecionado = pacote
+        
+        let atributosItemSelecionado = collectionView.layoutAttributesForItem(at: indexPath)
+        frameSelecionado = atributosItemSelecionado?.frame
+        
         navigationController?.pushViewController(controller, animated: true)
     }
     
@@ -75,5 +83,22 @@ class PacotesViagensViewController: UIViewController, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return UIDevice.current.userInterfaceIdiom == .phone ? CGSize(width: collectionView.bounds.width/2-20, height: 160) : CGSize(width: collectionView.bounds.width/3-20, height: 250)
+    }
+    
+    // MARK: - UINavigationControllerDelegate
+    
+    func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        guard let caminhoDaImagem = pacoteSelecionado?.viagem.caminhoDaImagem else { return nil }
+        guard let imagem = UIImage(named: caminhoDaImagem) else { return nil }
+        guard let frame = frameSelecionado else { return nil }
+        
+        switch operation {
+        case .push:
+            return AnimacaoTransicaoPersonalizada(duracao: 0.5, imagem: imagem, frameInicial: frame)
+        default:
+            // TO DO: Implementar animacao POP
+            return AnimacaoTransicaoPersonalizada(duracao: 0.5, imagem: imagem, frameInicial: frame)
+        }
     }
 }

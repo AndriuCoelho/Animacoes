@@ -40,6 +40,7 @@
 		0388B02F20DC19EF005F6A7C /* icon_hotel.png in Resources */ = {isa = PBXBuildFile; fileRef = 0388B01E20DC19EF005F6A7C /* icon_hotel.png */; };
 		0388B03120DC1B62005F6A7C /* PacoteViagemDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0388B03020DC1B62005F6A7C /* PacoteViagemDao.swift */; };
 		B9038B3021E126A800E3BB54 /* Validador.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9038B2F21E126A800E3BB54 /* Validador.swift */; };
+		B96AF67C21F3594D006DC5B2 /* AnimacaoTransicaoPersonalizada.swift in Sources */ = {isa = PBXBuildFile; fileRef = B96AF67B21F3594D006DC5B2 /* AnimacaoTransicaoPersonalizada.swift */; };
 		B994E10A21EA48D1006D7DCA /* launch-screen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B994E10921EA48D1006D7DCA /* launch-screen.jpg */; };
 		B994E10E21EA5457006D7DCA /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B994E10D21EA5457006D7DCA /* LaunchScreenViewController.swift */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		0388B01E20DC19EF005F6A7C /* icon_hotel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_hotel.png; sourceTree = "<group>"; };
 		0388B03020DC1B62005F6A7C /* PacoteViagemDao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacoteViagemDao.swift; sourceTree = "<group>"; };
 		B9038B2F21E126A800E3BB54 /* Validador.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validador.swift; sourceTree = "<group>"; };
+		B96AF67B21F3594D006DC5B2 /* AnimacaoTransicaoPersonalizada.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimacaoTransicaoPersonalizada.swift; sourceTree = "<group>"; };
 		B994E10921EA48D1006D7DCA /* launch-screen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "launch-screen.jpg"; sourceTree = "<group>"; };
 		B994E10D21EA5457006D7DCA /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,6 +147,7 @@
 			children = (
 				0388B00320DC153D005F6A7C /* TableViewCell.swift */,
 				0388B00520DC156E005F6A7C /* PacotesCollectionViewCell.swift */,
+				B96AF67B21F3594D006DC5B2 /* AnimacaoTransicaoPersonalizada.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,6 +282,7 @@
 				030B69CF20E153BA006B5424 /* DetalhesViagemViewController.swift in Sources */,
 				0388B00420DC153D005F6A7C /* TableViewCell.swift in Sources */,
 				B9038B3021E126A800E3BB54 /* Validador.swift in Sources */,
+				B96AF67C21F3594D006DC5B2 /* AnimacaoTransicaoPersonalizada.swift in Sources */,
 				0388B00A20DC177A005F6A7C /* PacoteViagem.swift in Sources */,
 				036A96D120E168DB002EC6AA /* ConfirmacaoPagamentoViewController.swift in Sources */,
 				B994E10E21EA5457006D7DCA /* LaunchScreenViewController.swift in Sources */,
